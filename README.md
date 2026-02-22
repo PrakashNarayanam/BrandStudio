@@ -1,9 +1,13 @@
 # 🚀 BrandStudio — The Ultimate AI Branding Platform
 
-![BrandStudio Logo](./src/assets/bs-logo.png)
+
 
 **BrandStudio** is an elite, all-in-one AI branding suite designed to transform a simple idea into a fully realized, premium brand identity in seconds. Built for high-performance entrepreneurs and designers, it leverages the fastest AI inference on the planet (Groq LPUs) and state-of-the-art image generation (FLUX.1).
 
+
+![BrandStudio Logo](./src/assets/bs-logo.png)
+
+Visit Website here :  https://brandstudio-ai.web.app.
 ---
 
 ## 🛠 Tech Stack
