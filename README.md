@@ -5,7 +5,7 @@
 **BrandStudio** is an elite, all-in-one AI branding suite designed to transform a simple idea into a fully realized, premium brand identity in seconds. Built for high-performance entrepreneurs and designers, it leverages the fastest AI inference on the planet (Groq LPUs) and state-of-the-art image generation (FLUX.1).
 
 
-![BrandStudio Logo](./src/assets/bs-logo.png)
+https://drive.google.com/file/d/1HTTQirGgEXRbsIPhbMJ8FTjbZ_XYtavx/view?usp=drive_link
 
 Visit Website here :  https://brandstudio-ai.web.app.
 ---
