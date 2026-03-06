@@ -57,7 +57,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     };
 
     const notConfigured = () => {
-        setError('Firebase is not configured yet. Add your VITE_FIREBASE_* keys to .env');
+        setError('Authentication service is currently unavailable due to technical issues. Please try again later.');
     };
 
     const signInWithGoogle = async () => {

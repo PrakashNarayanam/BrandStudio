@@ -15,6 +15,7 @@ import { Analytics } from './components/Analytics';
 import { ColorPaletteGenerator } from './components/ColorPaletteGenerator';
 import { BrandAudit } from './components/BrandAudit';
 import { Collections } from './components/Collections';
+import { ServiceAlert } from './components/ServiceAlert';
 import { BrandChecker } from './components/BrandChecker';
 
 import { LandingPage } from './pages/LandingPage';
@@ -342,12 +343,30 @@ function AppInner() {
   };
 
 
-  if (view === 'landing') return <LandingPage onGetStarted={() => setView('auth')} />;
-  if (view === 'auth') return <LoginPage onBack={() => setView('landing')} onSuccess={() => setView('app')} />;;
+  if (view === 'landing') return (
+    <>
+      <ServiceAlert />
+      <div style={{ paddingTop: '44px' }}>
+        <LandingPage onGetStarted={() => setView('auth')} />
+      </div>
+    </>
+  );
+  if (view === 'auth') return (
+    <>
+      <ServiceAlert />
+      <div style={{ paddingTop: '44px' }}>
+        <LoginPage onBack={() => setView('landing')} onSuccess={() => setView('app')} />
+      </div>
+    </>
+  );
 
   let sectionRender = '';
   return (
     <div className={cn('min-h-screen font-sans transition-colors duration-300', bg, text)}>
+      {/* ── Global service alert banner ── */}
+      <ServiceAlert />
+      {/* Offset so fixed banner doesn't cover content */}
+      <div style={{ height: '44px' }} />
       {/* Mobile header */}
       <div className={cn('lg:hidden flex items-center justify-between p-4 border-b backdrop-blur-md sticky top-0 z-50',
         isDark ? 'bg-black/80 border-zinc-800' : 'bg-white/80 border-slate-200')}>
